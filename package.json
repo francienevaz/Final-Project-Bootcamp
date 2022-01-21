@@ -1,0 +1,36 @@
+{
+  "name": "final-project-bootcamp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development",
+    "start": "webpack-dev-server --open --hot --mode development"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/francienevaz/Final-Project-Bootcamp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/francienevaz/Final-Project-Bootcamp/issues"
+  },
+  "homepage": "https://github.com/francienevaz/Final-Project-Bootcamp#readme",
+  "dependencies": {
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-scripts": "^5.0.0",
+    "webpack-dev-server": "^4.7.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.10",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.3",
+    "webpack": "^5.66.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
