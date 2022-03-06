@@ -1,10 +1,22 @@
-import React from "react";
-const App = () => {
-  return(
-    <div>
-      <p>Meu Projeto</p>
-      <p>Seja bem vindo =D.</p>
-    </div>
-  );
-};
-export default App;
+import React, {Component} from "react";
+
+
+class Twitter extends Component {
+  
+  componentWillUnmount() {
+    console.log('componentWillUnmount')
+  }
+  componentDidMount() {
+    console.log('componentDidMount')
+  }
+
+  render () {
+    return (
+      <div>
+        testando
+      </div>
+    )   
+  }
+}
+
+export default Twitter
