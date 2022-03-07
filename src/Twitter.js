@@ -1,6 +1,9 @@
 import React, {Component} from "react";
 
 class Twitter extends Component {
+    state = {
+        tweet : 'title'
+    }
   
   componentDidMount() {
     const {posts, loading} = this.props
@@ -15,6 +18,10 @@ class Twitter extends Component {
   }
   componentWillUnmount() {
       console.log('componentWillUnmount: fui removido : (')
+  }
+
+  shouldComponentUpdate(nextProps, nextState) {
+    return this.state.tweet !== nextState.tweet || nextProps.loading !== this.props.loading
   }
 
   render () {
