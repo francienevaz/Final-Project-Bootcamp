@@ -2,7 +2,7 @@ import React, {Component} from "react";
 
 class Twitter extends Component {
     state = {
-        tweet : 'title'
+        tweet: 'title'
     }
   
   componentDidMount() {
@@ -17,11 +17,17 @@ class Twitter extends Component {
     }
   }
   componentWillUnmount() {
-      console.log('componentWillUnmount: fui removido : (')
+      console.log('componentWillUnmount: fui removido :(')
   }
 
   shouldComponentUpdate(nextProps, nextState) {
-    return this.state.tweet !== nextState.tweet || nextProps.loading !== this.props.loading
+    return this.state.tweet !== nextState.tweet
+  }
+
+  tweet = () => {
+    this.setState({
+      twee: true
+    })
   }
 
   render () {
@@ -29,6 +35,7 @@ class Twitter extends Component {
     console.log('render', posts)
     return (
       <div>
+        <button onClick={this.tweet}>Re-Render</button>
         tests
       </div>
     )   
